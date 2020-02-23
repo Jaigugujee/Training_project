@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test1">
+
+
+<listeners>
+<listener class-name="Com.Facebook.Framework.App"></listener>
+
+
+</listeners>
+
+<test name= "Practice">
+
+<parameter name="url" value="http://amazon.com"></parameter>
+<parameter name="browser" value="chrome"></parameter>
+
+
+<classes>
+<class name="Test.Testdata"></class>
+
+
+</classes>
+</test>
+
+<test name="IT">
+<parameter name="url" value="http://amazon.com"></parameter>
+<parameter name="browser" value="firefox"></parameter>
+<classes>
+<class name="Test.Testdata"></class>
+
+<!--  -->
+</classes>
+
+</test>
+</suite>
